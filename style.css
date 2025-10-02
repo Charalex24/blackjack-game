@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  background: darkgreen;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.card {
+  width: 60px;
+  height: 90px;
+  margin: 5px;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+#aiSuggestion {
+  margin: 10px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+button {
+  background: radial-gradient(circle at 30% 30%, #ffcc00, #ff9900); /* golden chip look */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+}
+
+button:disabled {
+  background: gray;
+  color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
